@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Contact from './components/Contact/Contact';
+import Service from './components/Home/Service/Service';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route path="/service/:serviceId">
+            <Service></Service>
           </Route>
         </Switch>
       </BrowserRouter>
