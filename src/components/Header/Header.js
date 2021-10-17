@@ -1,6 +1,6 @@
 import React from 'react';
-import { Navbar,Link, Nav,Container } from 'react-bootstrap';
-
+import { Navbar,Container,Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         
@@ -11,17 +11,17 @@ const Header = () => {
     <Container className>
     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
     <Nav className="me-auto">
-      <Nav.Link to ="/home">Home</Nav.Link>
-      <Nav.Link to="/login">Login</Nav.Link>
-      <Nav.Link to="/register">Register</Nav.Link>
-      <Nav.Link to="/contact">Contact Us</Nav.Link>
+      <NavLink to ="/home">Home</NavLink>
+      <NavLink to="/login">Login</NavLink>
+      <NavLink to="/register">Register</NavLink>
+      <NavLink to="/contact">Contact Us</NavLink>
     </Nav>
     </Container>
   </Navbar>
 </>
     
     
-    
+
     );
 };
 
