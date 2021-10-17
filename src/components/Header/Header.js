@@ -1,6 +1,7 @@
 import React from 'react';
-import { Navbar,Container,Nav } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
+
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         
@@ -9,12 +10,12 @@ const Header = () => {
   <br />
   <Navbar bg="light" variant="light">
     <Container className>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Navbar.Brand href="#home">HOPE Medical</Navbar.Brand>
     <Nav className="me-auto">
-      <NavLink to ="/home">Home</NavLink>
-      <NavLink to="/login">Login</NavLink>
-      <NavLink to="/register">Register</NavLink>
-      <NavLink to="/contact">Contact Us</NavLink>
+      <NavLink as={Link} to ="/home">Home</NavLink>
+      <NavLink as={Link} to="/login">Login</NavLink>
+      <NavLink  as={Link} to="/register">Register</NavLink>
+      <NavLink as={Link}  to="/contact">Contact Us</NavLink>
     </Nav>
     </Container>
   </Navbar>
