@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Lab Test",
+        "discription": "roin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+        "img": "http://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/pricing-img-2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Dental Care",
+        "discription": "Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+        "img": "http://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Cardiac Monitoring",
+        "discription": "oin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+        "img": "http://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dental Department.",
+        "discription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit….",
+        "img": "http://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Orthopedic Department.",
+        "discription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit….",
+        "img": "http://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Emergency Department.",
+        "discription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia eligendi libero, laborum quaerat hic. Nesciunt, mollitia, rerum. Ex obcaecati ut consectetur ipsum a ipsam repellendus quas earum odit….",
+        "img": "http://asianitbd.com/wp/hopemedical/wp-content/uploads/2016/10/featured-image-6.jpg"
+    },
+    {
+        "id": 7,
+        "name":""
+    }
+]
