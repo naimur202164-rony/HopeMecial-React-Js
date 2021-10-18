@@ -1,66 +1,71 @@
+import initializeAuthinTication from "../Firebase/firebase.initia";
+import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged  ,signOut, createUserWithEmailAndPassword} from "firebase/auth";
 import { useEffect, useState } from "react";
-import { getAuth,createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider,onAuthStateChanged,signOut  } from "firebase/auth";
-import initializationAuthintication from './../componets/useFirebase/firebase.ini';
 
 
-initializationAuthintication()
-
+initializeAuthinTication()
 const UseFirebase = () => {
-        const [user,setUser]=useState({});
-        const auth=getAuth();
-        const GoogleProvider=new GoogleAuthProvider()
+            
+        const[user,setUser]=useState({});
+        // Email
         const [email,setEmail]=useState('');
+        // Password
         const [password,setPassword]=useState('')
 
+        const auth=getAuth();
+        const GoogleProvider=new GoogleAuthProvider()
 
-        const GoogleSignIN=()=>{
-                signInWithPopup(auth,GoogleProvider)
-                .then(result=>{
-                    console.log(result.user)
-                });
+        // Gooogle sign in
+        const HandleGoogleIn=()=>{
+            signInWithPopup(auth,GoogleProvider)
+            .then(result=>{
+                console.log(result.user)
+            })
+        };
 
-        }
-
-        
+        // Hooks'
         useEffect(()=>{
-            onAuthStateChanged(auth,(user)=>{
+            onAuthStateChanged (auth,(user)=>{
                 if(user){
-                    setUser({})
+                    setUser(user)
                 }
             })
         },[])
-        // Google Logout Mathods
+
+            // Login Out
             const LogOut=()=>{
-                signOut(auth)
-                .then(()=>{
-                    setUser({})
+                    signOut(auth)
+                    .then(()=>{
+                        setUser({})
+                    })
+            }
+            const handleSubmit=(e)=>{
+                createUserWithEmailAndPassword(auth,email,password)
+                .then(result=>{
+                    const user=result.user;
+                    console.log(user)
                 })
-                
-            }       
-                    const handleRegistration=(e)=>{
-                        console.log(email,password);
-         createUserWithEmailAndPassword(auth,email,password)
-            .then(result=>{
-             const user=result.user;
-                 console.log(user)
-    })
+                e.preventDefault()
+            }
 
-        e.preventDefault()
-         }
+                // email
 
-                    // Email
-                    const handleEmail=(e)=>{
-                        setEmail(e.target.value)
-                    }  ; 
-
-                    // PassWord
-                    const handlePassWord=(e)=>{
-                        setPassword(e.target.value)
-                    }
-
-                return{
-                        handleRegistration,LogOut,GoogleSignIN,user,handleEmail,handlePassWord,handlePassWord
+                const handleEmail=(e)=>{
+                    setEmail(e.target.value)
                 }
+                // PassWords
+                const handlePassword=(e)=>{
+                    setPassword(e.target.value)
+                }
+
+
+
+
+
+
+            return{
+                user,LogOut,HandleGoogleIn,handleEmail,handlePassword,handleSubmit
+            }
 
 };
 

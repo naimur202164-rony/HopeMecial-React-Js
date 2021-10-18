@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+const Gallery = () => {
     return (
         <div>
-            <h2>This is Footer</h2>
+            <h2>This Gallry</h2>
         </div>
     );
 };
 
-export default Footer;
+export default Gallery;

@@ -5,7 +5,7 @@ import Services from './Services/Services';
 const Home = () => {
     const [services ,setService]=useState([]);
     useEffect(()=>{
-            fetch('https://naimur202163.github.io/basicapi/doctor.JSON')
+            fetch('./data.JSON')
             .then(res=>res.json())
             .then(data=>setService(data))
     },)
