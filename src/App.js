@@ -44,7 +44,7 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="gallery">
+            <Route path="/gallery">
               <Gallery></Gallery>
             </Route>
           </Switch>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import UseFirebase from '../../hooks/UseFirebase';
 import UseAuth from './../../hooks/UseAuth';
+import Footer from './../Footer/Footer';
 
 const Login = () => {
   const { HandleGoogleIn, handleEmail, handlePassword, handleSubmit } = UseAuth()
@@ -34,9 +35,11 @@ const Login = () => {
         <h2> Sign In With Google Account</h2>
         <Button onClick={HandleGoogleIn}>Google</Button>
       </div>
+      <Footer></Footer>
 
     </div>
-  );
-};
 
+  );
+
+};
 export default Login;

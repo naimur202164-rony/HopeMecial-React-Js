@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './../Footer/Footer';
 
 const Doctors = () => {
     return (
@@ -57,6 +58,8 @@ const Doctors = () => {
                 </div>
             </div>
             <div></div>
+            <Footer></Footer>
+
         </div>
     );
 };

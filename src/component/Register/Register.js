@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Footer from './../Footer/Footer';
 
 const Register = () => {
     return (
@@ -36,6 +37,7 @@ const Register = () => {
                 <p className="text-muted">Already have an <Link to="/login"> account Login now</Link></p>
 
             </div>
+            <Footer></Footer>
 
         </div>
     );
