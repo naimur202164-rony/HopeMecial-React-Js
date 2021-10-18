@@ -2,9 +2,10 @@ import React from 'react';
 import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
+import UseAuth from '../../hooks/UseAuth';
 import UseFirebase from '../../hooks/UseFirebase';
 const Header = () => {
-  const {LogOut,user}=UseFirebase()
+    const {user,LogOut}=UseFirebase()
     return (
         
             <>
@@ -18,13 +19,10 @@ const Header = () => {
       <NavLink as={Link} to="/login">Login</NavLink>
       <NavLink  as={Link} to="/register">Register</NavLink>
       <NavLink as={Link}  to="/contact">Contact Us</NavLink>
-      {
-
-        user.email?
-      <NavLink  onClick={LogOut} >SignOut</NavLink>:
-      <NavLink as={Link} to="/login">SignIn</NavLink>
-      
-      }
+          {
+          user.email?  <NavLink  as={Link}><button onClick={LogOut}>Logout</button></NavLink>:
+          <NavLink as={Link} to="/login">Login</NavLink>
+          }
     </Nav>
     </Container>
   </Navbar>
