@@ -1,6 +1,8 @@
 import React from 'react';
+import UseFirebase from '../../hooks/UseFirebase';
 
 const Login = () => {
+  const {GoogleSignIN}=UseFirebase()
     return (
         <div className="container row">
             <div className="col-lg-6 "></div>
@@ -24,9 +26,11 @@ const Login = () => {
         <div className="form-group text-center m-t-20">
           <div class="col-xs-12">
             <button className="btn btn-info btn-lg btn-block btn-rounded my-3 text-uppercase waves-effect waves-light" type="submit">Log In</button>
+            <button  onClick={GoogleSignIN} className="btn btn-info btn-lg btn-block btn-rounded my-3 text-uppercase waves-effect waves-light" >Log In</button>
           </div>
         </div>
       </form>
+      <button onClick={GoogleSignIN}>This button</button>
     </div>
   </div>            
 
