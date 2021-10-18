@@ -1,8 +1,9 @@
 import React from 'react';
+import UseAuth from '../../hooks/UseAuth';
 import UseFirebase from '../../hooks/UseFirebase';
 
 const Login = () => {
-  const {GoogleSignIN}=UseFirebase()
+  const {GoogleSignIN}=UseAuth()
     return (
         <div className="container row">
             <div className="col-lg-6 "></div>

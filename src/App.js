@@ -1,15 +1,17 @@
-import { BrowserRouter,Switch ,Route} from 'react-router-dom';
+import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home/Home';
-import Header from './components/Header/Header';
-import Login from './components/Login/Login';
-import Register from './components/Register/Register';
-import Contact from './components/Contact/Contact';
-import Service from './components/Home/Service/Service';
+import AuthProvider from './componets/Context/AuthProvider';
+import Header from './componets/Header/Header';
+import Home from './componets/Home/Home';
+import Login from './componets/Login/Login';
+import Register from './componets/Register/Register';
+import Contact from './componets/Contact/Contact';
+import Service from './componets/Home/Service/Service';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <BrowserRouter>
       <Header></Header>
         <Switch>
@@ -33,6 +35,8 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      </AuthProvider>
+        
 
     </div>
   );
