@@ -8,7 +8,7 @@ const Service = () => {
     const { serviceId } = useParams();
     const [details, setDetails] = useState([]);
     useEffect(() => {
-        fetch('/data.JSON')
+        fetch('/data.json')
             .then(res => res.json())
             .then(data => setDetails(data))
     }, [details]);

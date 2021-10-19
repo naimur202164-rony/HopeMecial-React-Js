@@ -6,7 +6,7 @@ import Footer from './../Footer/Footer';
 const Home = () => {
     const [services, setService] = useState([]);
     useEffect(() => {
-        fetch('./data.JSON')
+        fetch('./data.json')
             .then(res => res.json())
             .then(data => setService(data))
     }, [services])
