@@ -11,7 +11,7 @@ const Service = () => {
         fetch('/data.JSON')
             .then(res => res.json())
             .then(data => setDetails(data))
-    }, []);
+    }, [details]);
 
     const EaxctItem = details?.filter(td => td.id == serviceId);
     // DisStruchering
