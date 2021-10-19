@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './../Footer/Footer';
 
 const Gallery = () => {
     return (
@@ -36,10 +37,10 @@ const Gallery = () => {
                     </p>
                     <p className="my-4 text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet.</p>
                 </div>
-                <div className="col-lg-4 col-sm-12"><img className="img-fluid" src="https://demos.webicode.com/html/medikal/images/founder-2.jpg" />
+                <div className="col-lg-4 col-sm-12 my-1"><img className="img-fluid" src="https://demos.webicode.com/html/medikal/images/founder-2.jpg" />
                     <h3 className="text-center">John Doe</h3>
                 </div>
-                <div className="col-lg-4 col-sm-12">
+                <div className="col-lg-4 col-sm-12 my-1">
                     <img className="img-fluid" src="https://demos.webicode.com/html/medikal/images/founder-1.jpg" />
                     <h3 className="text-center">Dr Brucye</h3>
 
@@ -47,29 +48,45 @@ const Gallery = () => {
             </div>
             {/* Div-4 */}
             <div className="row">
-                <div className="col-sm-12 col-lg-4 col-md-6">
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
                     <h1 className="my-5">Blog    <span className="text-info my-5 ">dates</span> </h1>
                 </div>
-                <div className="col-sm-12 col-lg-4 col-md-6">
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
                     <img className="img-fluid" src="https://demos.webicode.com/html/medikal/images/blog-img-1.jpg" />
                 </div>
-                <div className="col-sm-12 col-lg-4 col-md-6">
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
                     <h3>THE HOSPITAL-DEPENDENT<span className="text-info">PATIENT</span> </h3>
                     <p>post by John Doe on April 5th, 2015</p>
                     <p>Claritas est etiam processus dynamicus, qui sequ itur mutationem consuetudium lectorum. Mirum est notare quam littera.</p>
                 </div>
-                <div className="col-sm-12 col-lg-4 col-md-6">
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
                     <img className="img-fluid" src="https://demos.webicode.com/html/medikal/images/blog-img-2.jpg" />
                 </div>
-                <div className="col-sm-12 col-lg-4 col-md-6">
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
                     <h3>SPENDING MORE<span className="text-info">GETTING </span>  LESS FOR HEALTH CARE</h3>
                     <p>post by John Doe on April 5th, 2015</p>
                     <p>Claritas est etiam processus dynamicus, qui sequ itur mutationem consuetudium lectorum. Mirum est notare quam littera.</p>
                 </div>
-                <div className="col-sm-12 col-lg-4 col-md-6"></div>
-                <div className="col-sm-12 col-lg-4 col-md-6"></div>
-                <div className="col-sm-12 col-lg-4 col-md-6"></div>
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
+                    <img className="img-fluid" src="https://demos.webicode.com/html/medikal/images/blog-img-4.jpg" />
+                </div>
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
+                    <h3>A VITAL MEASURE:<span className="text-info">YOUR SURGEON’S </span> SKILL </h3>
+                    <p>post by John Doe on April 5th, 2015</p>
+                    <p>Claritas est etiam processus dynamicus, qui sequ itur mutationem consuetudium lectorum. Mirum est notare quam littera.</p>
+                </div>
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1">
+                    <img className="img-fluid" src="https://demos.webicode.com/html/medikal/images/blog-img-3.jpg" />
+                </div>
+                <div className="col-sm-12 col-lg-4 col-md-6 my-1"><h3>EMERGENCY ROOMS ARE NO <soan className="text-info">PLACE</soan> PLACE FOR THE ELDERLY</h3>
+                    <p>post by John Doe on April 5th, 2015</p>
+                    <p>Claritas est etiam processus dynamicus, qui sequ itur mutationem consuetudium lectorum. Mirum est notare quam littera.</p>
+                </div>
             </div>
+            {/* Div-5 */}
+
+            <div className="my-5" ><h1>We are a team of young<br /> <span className="text-info"> professionals</span> passionate in<br /> our work.</h1></div>
+            <Footer></Footer>
         </div>
     );
 };
