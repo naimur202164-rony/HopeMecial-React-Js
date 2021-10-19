@@ -19,7 +19,7 @@ const Home = () => {
                 WE OFFER YOU THE <span className="text-info"> BEST SUPPORT</span></h2>
             <div className="row">
                 {
-                    services.map(service =>
+                    services?.map(service =>
 
 
                         <Services

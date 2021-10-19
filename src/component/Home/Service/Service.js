@@ -13,7 +13,7 @@ const Service = () => {
             .then(data => setDetails(data))
     }, []);
 
-    const EaxctItem = details.filter(td => td.id == serviceId);
+    const EaxctItem = details?.filter(td => td.id == serviceId);
     // DisStruchering
     // const { name, id, img } = EaxctItem[0]
     console.log(EaxctItem[0])
