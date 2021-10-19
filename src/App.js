@@ -10,6 +10,7 @@ import About from './component/About/About';
 import Doctors from './component/Doctors/Doctors';
 import Gallery from './component/Gallery/Gallery';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+import Notfound from './component/NotFound/Notfound';
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
             </Route>
             <Route path="/gallery">
               <Gallery></Gallery>
+            </Route>
+            <Route path="*">
+              <Notfound></Notfound>
             </Route>
           </Switch>
         </BrowserRouter>
